@@ -98,11 +98,11 @@
 
         dev_symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans            &trans             &trans            &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE         &trans             &kp PIPE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp EQUAL         &kp UNDERSCORE     &kp MINUS         &kp PLUS           &kp DOUBLE_QUOTES
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans            &kp LESS_THAN      &kp GREATER_THAN  &kp QUESTION       &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans          &trans           &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans          &trans           &trans            &trans             &kp PIPE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp EQUAL       &kp UNDERSCORE   &kp MINUS         &kp PLUS           &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp GRAVE       &kp LESS_THAN    &kp GREATER_THAN  &kp QUESTION       &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
             >;
         };
     };
