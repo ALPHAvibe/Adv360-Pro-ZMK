@@ -15,7 +15,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&lt { tapping-term-ms = <250>; };
+&lt {
+    tapping-term-ms = <250>;
+    flavor = "tap-preferred";
+};
 
 / {
     behaviors {
@@ -40,6 +43,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <7 21 39 8 9 10 11 13 12 22 23 24 25 26 27 45 43 41 40 42 54 55 56 57 58 44 59 75 74 73 72 38 37 53 69 70 68 7 8 9 10 21 22 23 24 37 38 39 40 41 42 54 55 56 71 72 7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
+            flavor = "tap-preferred";
         };
 
         hmr: home_row_mod_right {
@@ -50,6 +54,7 @@
 
             tapping-term-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -68,11 +73,11 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2        &kp N3    &kp N4     &kp N5  &tog 1                                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W         &kp E     &kp R      &kp T   &none                                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S         &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT              &kp RALT           &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X         &kp C     &kp V      &kp B                        &kp LEFT_COMMAND      &kp RIGHT_COMMAND                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp PG_DN             &kp PG_DN          &kp ENTER  &kp KP_N0          &kp DOWN    &kp UP        &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1     &kp N2        &kp N3    &kp N4     &kp N5  &tog 1                                                           &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &kp W         &kp E     &kp R      &kp T   &none                                                            &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp S         &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp RIGHT_COMMAND  &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X         &kp C     &kp V      &kp B                        &kp HOME      &kp PAGE_UP                              &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN          &kp ENTER  &kp KP_N0          &kp DOWN    &kp UP        &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
