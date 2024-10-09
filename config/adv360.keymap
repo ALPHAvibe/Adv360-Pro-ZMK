@@ -113,6 +113,181 @@
             bindings = <&kp LG(LA(LS(LEFT_BRACKET)))>;
             label = "NAV_TAB_PREVIOUS";
         };
+
+        mac_snap_full: mac_snap_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(F))))>;
+            label = "MAC_SNAP_FULL";
+        };
+
+        mac_snap_right: mac_snap_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(D))))>;
+            label = "MAC_SNAP_RIGHT";
+        };
+
+        mac_snap_left: mac_snap_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(S))))>;
+            label = "MAC_SNAP_LEFT";
+        };
+
+        ipad_snap_full: ipad_snap_full {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(V))))>;
+            label = "IPAD_SNAP_FULL";
+        };
+
+        ipad_snap_right: ipad_snap_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(C))))>;
+            label = "IPAD_SNAP_RIGHT";
+        };
+
+        ipad_snap_left: ipad_snap_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(X))))>;
+            label = "IPAD_SNAP_LEFT";
+        };
+
+        open_y: open_y {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(Y))))>;
+            label = "OPEN_Y";
+        };
+
+        open_u: open_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(U))))>;
+            label = "OPEN_U";
+        };
+
+        open_i: open_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(I))))>;
+            label = "OPEN_I";
+        };
+
+        open_o: open_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(O))))>;
+            label = "OPEN_O";
+        };
+
+        open_p: open_p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(P))))>;
+            label = "OPEN_P";
+        };
+
+        open_h: open_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(H))))>;
+            label = "OPEN_H";
+        };
+
+        open_j: open_j {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(J))))>;
+            label = "OPEN_J";
+        };
+
+        open_k: open_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(K))))>;
+            label = "OPEN_K";
+        };
+
+        open_l: open_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(L))))>;
+            label = "OPEN_L";
+        };
+
+        open_semicolon: open_semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LA(LS(SEMICOLON))))>;
+            label = "OPEN_SEMICOLON";
+        };
+
+        tmux_window_1: tmux_window_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_1>;
+            label = "TMUX_WINDOW_1";
+        };
+
+        tmux_window_2: tmux_window_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_2>;
+            label = "TMUX_WINDOW_2";
+        };
+
+        tmux_window_3: tmux_window_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_3>;
+            label = "TMUX_WINDOW_3";
+        };
+
+        tmux_window_4: tmux_window_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_4>;
+            label = "TMUX_WINDOW_4";
+        };
+
+        tmux_window_5: tmux_window_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp NUMBER_5>;
+            label = "TMUX_WINDOW_5";
+        };
+
+        tmux_left: tmux_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp H>;
+            label = "TMUX_LEFT";
+        };
+
+        tmux_down: tmux_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp J>;
+            label = "TMUX_DOWN";
+        };
+
+        tmux_up: tmux_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp K>;
+            label = "TMUX_UP";
+        };
+
+        tmux_right: tmux_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp L>;
+            label = "TMUX_RIGHT";
+        };
     };
 
     keymap {
@@ -170,21 +345,21 @@
 
         navigation {
             bindings = <
-&none  &none  &none         &none              &none          &none         &none                                                            &none    &none     &none          &none         &none      &none  &none
-&none  &none  &none         &none              &none          &none         &none                                                            &none    &none     &none          &none         &none      &none  &none
-&none  &none  &nav_back     &nav_tab_previous  &nav_tab_next  &nav_forward  &none       &trans         &trans          &trans     &trans     &none    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none  &none
-&none  &none  &spaces_left  &spaces_up         &space_down    &space_right                             &trans          &trans                         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none  &none
-&none  &none  &none         &none              &none                        &kp ESCAPE  &kp BACKSPACE  &kp DELETE      &kp ENTER  &kp SPACE  &kp TAB            &none          &none         &none      &none  &none
+&none  &none           &none           &none              &none           &none           &none                                                            &none    &none       &none          &none         &none        &none  &none
+&none  &tmux_window_1  &tmux_window_2  &tmux_window_3     &tmux_window_4  &tmux_window_5  &none                                                            &none    &tmux_left  &tmux_down     &tmux_up      &tmux_right  &none  &none
+&none  &none           &nav_back       &nav_tab_previous  &nav_tab_next   &nav_forward    &none       &trans         &trans          &trans     &trans     &none    &kp LEFT    &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none  &none
+&none  &none           &spaces_left    &spaces_up         &space_down     &space_right                               &trans          &trans                         &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP   &kp END      &none  &none
+&none  &none           &none           &none              &none                           &kp ESCAPE  &kp BACKSPACE  &kp DELETE      &kp ENTER  &kp SPACE  &kp TAB              &none          &none         &none        &none  &none
             >;
         };
 
         macro {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none  &none  &none            &none             &none            &none  &none                                       &none   &none    &none    &none    &none    &none            &none
+&none  &none  &none            &none             &none            &none  &none                                       &none   &open_y  &open_u  &open_i  &open_o  &open_p          &none
+&none  &none  &mac_snap_left   &mac_snap_right   &mac_snap_full   &none  &none   &trans  &trans      &trans  &trans  &none   &open_h  &open_j  &open_k  &open_l  &open_semicolon  &none
+&none  &none  &ipad_snap_left  &ipad_snap_right  &ipad_snap_full  &none                  &trans      &trans                  &none    &none    &none    &none    &none            &none
+&none  &none  &none            &none             &none                   &trans  &trans  &trans      &trans  &trans  &trans           &none    &none    &none    &none            &trans
             >;
         };
 
