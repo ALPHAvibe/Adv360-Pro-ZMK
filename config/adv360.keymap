@@ -85,6 +85,34 @@
             bindings = <&kp LC(DOWN)>;
             label = "SPACE_DOWN";
         };
+
+        nav_forward: nav_forward {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LS(RIGHT_BRACKET)))>;
+            label = "NAV_FORWARD";
+        };
+
+        nav_back: nav_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LS(LEFT_BRACKET)))>;
+            label = "NAV_BACK";
+        };
+
+        nav_tab_next: nav_tab_next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(RIGHT_BRACKET)))>;
+            label = "NAV_TAB_NEXT";
+        };
+
+        nav_tab_previous: nav_tab_previous {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(LEFT_BRACKET)))>;
+            label = "NAV_TAB_PREVIOUS";
+        };
     };
 
     keymap {
@@ -142,11 +170,11 @@
 
         navigation {
             bindings = <
-&none  &none  &none         &none       &none        &none         &none                                                            &none    &none     &none          &none         &none      &none  &none
-&none  &none  &none         &none       &none        &none         &none                                                            &none    &none     &none          &none         &none      &none  &none
-&none  &none  &none         &none       &none        &none         &none       &trans         &trans          &trans     &trans     &none    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none  &none
-&none  &none  &spaces_left  &spaces_up  &space_down  &space_right                             &trans          &trans                         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none  &none
-&none  &none  &none         &none       &none                      &kp ESCAPE  &kp BACKSPACE  &kp DELETE      &kp ENTER  &kp SPACE  &kp TAB            &none          &none         &none      &none  &none
+&none  &none  &none         &none              &none          &none         &none                                                            &none    &none     &none          &none         &none      &none  &none
+&none  &none  &none         &none              &none          &none         &none                                                            &none    &none     &none          &none         &none      &none  &none
+&none  &none  &nav_back     &nav_tab_previous  &nav_tab_next  &nav_forward  &none       &trans         &trans          &trans     &trans     &none    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none  &none
+&none  &none  &spaces_left  &spaces_up         &space_down    &space_right                             &trans          &trans                         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none  &none
+&none  &none  &none         &none              &none                        &kp ESCAPE  &kp BACKSPACE  &kp DELETE      &kp ENTER  &kp SPACE  &kp TAB            &none          &none         &none      &none  &none
             >;
         };
 
