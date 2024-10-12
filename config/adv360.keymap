@@ -290,6 +290,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        shifts_capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <46 59>;
+        };
+
+        hrm_capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <29 44>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -298,7 +312,7 @@
 &kp EQUAL  &kp N1             &kp N2        &kp N3           &kp N4               &kp N5   &none                                                                                  &mo 10     &kp N6   &kp N7                &kp N8            &kp N9        &kp N0                 &kp MINUS
 &kp TAB    &kp Q              &kp W         &kp E            &kp R                &kp T    &none                                                                                  &none      &kp Y    &kp U                 &kp I             &kp O         &kp P                  &kp BSLH
 &kp ESC    &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &lt 7 G  &none         &kp LEFT_ALT     &kp LEFT_COMMAND      &kp RIGHT_COMMAND  &kp RIGHT_ALT  &none      &lt 7 H  &hmr RIGHT_COMMAND J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMI  &kp SQT
-&kp LSHFT  &lt 4 Z            &kp X         &kp C            &lt 3 V              &kp B                                   &kp LEFT_CONTROL      &kp RIGHT_CONTROL                            &kp N    &lt 3 M               &kp COMMA         &kp DOT       &lt 5 SLASH            &kp RSHFT
+&kp LSHFT  &lt 4 Z            &kp X         &kp C            &kp V                &kp B                                   &kp LEFT_CONTROL      &kp RIGHT_CONTROL                            &kp N    &kp M                 &kp COMMA         &kp DOT       &lt 5 SLASH            &kp RSHFT
 &mo 4      &kp GRAVE          &none         &kp LEFT         &kp RIGHT                     &lt 8 ESCAPE  &lt 1 BACKSPACE  &lt 3 DELETE          &lt 3 ENTER        &lt 2 SPACE    &lt 8 TAB           &kp DOWN              &kp UP            &kp LBKT      &kp RBKT               &mo 5
             >;
         };
@@ -358,7 +372,7 @@
 &none   &none   &none         &none  &none  &none       &tog 9                                                           &trans   &none         &none         &none         &none         &none         &none
 &none   &none   &none         &none  &none  &none       &none                                                            &none    &none         &none         &none         &none         &none         &none
 &none   &none   &none         &none  &none  &bt BT_CLR  &none       &trans         &trans          &trans     &trans     &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none   &trans  &kp CAPSLOCK  &none  &none  &none                                  &trans          &trans                         &none         &none         &none         &none         &trans        &none
+&none   &trans  &none         &none  &none  &none                                  &trans          &trans                         &none         &none         &none         &none         &trans        &none
 &trans  &none   &kp CAPSLOCK  &none  &none              &kp ESCAPE  &kp BACKSPACE  &kp DELETE      &kp ENTER  &kp SPACE  &kp TAB                &none         &none         &none         &none         &trans
             >;
         };
