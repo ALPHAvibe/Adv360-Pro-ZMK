@@ -296,11 +296,15 @@
         shifts_capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <46 59>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
         };
 
         hrm_capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <29 44>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
     };
 
